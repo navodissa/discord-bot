@@ -1,7 +1,7 @@
 # @Author: Your name
 # @Date:   2021-09-08 13:38:37
 # @Last Modified by:   Your name
-# @Last Modified time: 2021-09-08 20:49:30
+# @Last Modified time: 2021-09-08 20:50:38
 # This workflow will install Python dependencies, run tests and lint with a single version of Python
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
 
@@ -45,5 +45,6 @@ jobs:
         HEROKU_USERNAME: 'navomails@gmail.com'
       if: github.ref == 'refs/heads/master' && job.status == 'success'
       run: |
+        heroku login
         git remote add heroku https://heroku:$HEROKU_API__TOKEN@git.heroku.com/$HEROKU_APP_NAME.git
         git push heroku HEAD:master -f
