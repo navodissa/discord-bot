@@ -1,7 +1,7 @@
 # @Author: Your name
 # @Date:   2021-09-08 13:38:37
 # @Last Modified by:   Your name
-# @Last Modified time: 2021-09-08 21:10:04
+# @Last Modified time: 2021-09-08 21:10:49
 # This workflow will install Python dependencies, run tests and lint with a single version of Python
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
 
@@ -21,7 +21,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - run: |
-      git fetch --prune --unshallow
+        git fetch --prune --unshallow
     - name: Set up Python 3.9
       uses: actions/setup-python@v2
       with:
