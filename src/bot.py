@@ -2,7 +2,7 @@
 # @Author: Your name
 # @Date:   2021-09-07 20:40:44
 # @Last Modified by:   Your name
-# @Last Modified time: 2021-09-08 20:34:01
+# @Last Modified time: 2021-09-08 20:38:27
 # bot.py
 import os
 import random
@@ -25,7 +25,7 @@ async def on_message(message):
         'Bingpot!',
         (
             'Cool. Cool cool cool cool cool cool cool, '
-            'no doubt no doubt no doubt no doubt at all.'
+            'no doubt no doubt no doubt no doubt at all. Yeah'
         ),
     ]
 
